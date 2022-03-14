@@ -30,7 +30,8 @@ proxy({
 
 // this is an example html page to view the stream
 app.get('/', (req, res) =>{
-  res.send(`
+  res.send(`<h1>Hello world</h1>`);
+  /*res.send(`
   <canvas id='canvas'></canvas>
 
   <script src='${scriptUrl}'></script>
@@ -40,7 +41,7 @@ app.get('/', (req, res) =>{
       canvas: document.getElementById('canvas')
     });
   </script>
-`);
+`);*/
 },
   
 );
