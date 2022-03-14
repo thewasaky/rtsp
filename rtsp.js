@@ -30,7 +30,9 @@ proxy({
 
 // this is an example html page to view the stream
 app.get('/', (req, res) =>{
-  res.send(`<h1>Hello world</h1>`);
+  res.send(`<h1>Asi te queria agarrar puerco</h1>
+    <img src="https://c.tenor.com/RrkSMr0bIJ0AAAAC/jesus-bailando.gif"  />
+  `);
   /*res.send(`
   <canvas id='canvas'></canvas>
 
