@@ -56,7 +56,7 @@ app.get(
   <script src='${scriptUrl}'></script>
   <script>
     loadPlayer({
-      url: 'ws://'+location.host+'/api/streams?url=${req.query.url}',
+      url: 'wss://'+location.host+'/api/streams?url=${req.query.url}',
       canvas: document.getElementById('canvas')
     });
   </script>
