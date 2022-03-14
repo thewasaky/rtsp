@@ -64,4 +64,6 @@ app.get(
   }
 );
 
-app.listen(port);
+app.listen(port,function() {
+  console.log('Our app is running on port ' + port);
+});
