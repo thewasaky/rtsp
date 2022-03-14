@@ -3,7 +3,9 @@ const app = express();
 var qs = require('querystring');
 var url="rtsp://freja.hiof.no:1935/rtplive/_definst_/hessdalen03.stream";
 const { proxy, scriptUrl } = require('rtsp-relay')(app);
-
+// set the port of our application
+// process.env.PORT lets the port be set by Heroku
+var port = process.env.PORT || 8080;
 // the endpoint our RTSP uses
 app.ws('/api/stream', proxy({
   url: `${url}`,
@@ -62,4 +64,4 @@ app.get(
   }
 );
 
-app.listen(443);
+app.listen(port);
