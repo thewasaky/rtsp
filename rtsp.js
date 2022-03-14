@@ -56,7 +56,7 @@ app.get(
   <script src='${scriptUrl}'></script>
   <script>
     loadPlayer({
-      url: 'ws://10.218.53.45:8080/api/streams?url=${req.query.url}',
+      url: 'ws://https://rtsp-deploy.herokuapp.com/api/streams?url=${req.query.url}',
       canvas: document.getElementById('canvas')
     });
   </script>
